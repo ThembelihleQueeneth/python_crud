@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+</head>
+<body>
+    <h1>Edit User</h1>
+
+    <form action="/update/{{user[0]}}" method="POST">
+        <label for="name">Name:</label>
+        <input 
+            type="text"
+            id="name"
+            name="name"
+            value="{{user[1]}}"
+            required
+            > 
+            <br><br>
+
+            <label for="surname">Surname:</label>
+            <input 
+            type="text"
+            id="surname"
+            name="surname"
+            value="{{user[2]}}"
+            required
+            > 
+            <br><br>
+            <a href="/">Cancel</a>
+    </form>
+    
+</body>
+</html>
